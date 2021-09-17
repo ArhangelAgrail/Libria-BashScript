@@ -75,6 +75,8 @@ if [ "$OS" = "Ubuntu" ]; then
 		supported=1
 	elif [ "$VER" = "18.04" ]; then
 		supported=1
+	elif [ "$VER" = "20.04" ]; then
+		supported=1
 	else
 		supported=0
 	fi
