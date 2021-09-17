@@ -17,10 +17,10 @@ while [ $choice -eq 5 ]; do
 read choice
 if [ $choice -eq 1 ] ; then
 	echo ""
-	wget -N https://github.com/ArhangelAgrail/Lake-BashScript/raw/master/NadekoARN.sh 
+	wget -N https://github.com/ArhangelAgrail/Libria-BashScript/raw/master/NadekoARN.sh 
 	cd "$root"
 	echo "Starting Nadeko in pm2 with auto-restart and no auto-update..."
-	sudo pm2 start "$root/NadekoARN.sh" --interpreter=bash --name=Lake
+	sudo pm2 start "$root/NadekoARN.sh" --interpreter=bash --name=Libria
 	sudo pm2 startup
 	sudo pm2 save
 	echo ""
@@ -28,10 +28,10 @@ if [ $choice -eq 1 ] ; then
 else
 	if [ $choice -eq 2 ] ; then
 		echo ""
-		wget -N https://github.com/ArhangelAgrail/Lake-BashScript/raw/master/NadekoARU_Latest.sh 
+		wget -N https://github.com/ArhangelAgrail/Libria-BashScript/raw/master/NadekoARU_Latest.sh 
 		cd "$root"
 		echo "Starting Nadeko in pm2 with auto-restart and auto-update..."
-		sudo pm2 start "$root/NadekoARU_Latest.sh" --interpreter=bash --name=Lake
+		sudo pm2 start "$root/NadekoARU_Latest.sh" --interpreter=bash --name=Libria
 		sudo pm2 startup
 		sudo pm2 save
 		echo ""
@@ -39,10 +39,10 @@ else
 	else
 		if [ $choice -eq 3 ] ; then
 		echo ""
-		wget -N https://github.com/ArhangelAgrail/Lake-BashScript/raw/master/nadeko_run.sh
+		wget -N https://github.com/ArhangelAgrail/Libria-BashScript/raw/master/nadeko_run.sh
 		cd "$root"
 		echo "Starting Nadeko in pm2 normally without any auto update or restart.."
-		sudo pm2 start "$root/nadeko_run.sh" --interpreter=bash --name=Lake
+		sudo pm2 start "$root/nadeko_run.sh" --interpreter=bash --name=Libria
 		sudo pm2 startup
 		sudo pm2 save
 		echo ""
