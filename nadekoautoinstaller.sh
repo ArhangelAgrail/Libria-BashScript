@@ -75,8 +75,27 @@ if [ "$OS" = "Ubuntu" ]; then
 		supported=1
 	elif [ "$VER" = "18.04" ]; then
 		supported=1
+	elif [ "$VER" = "18.10" ]; then
+		supported=1
+		VER=18.04
+		echo -e "Using Ubuntu 18.04 Installation scripts.\nIf the installation fails contact NadekoBot support."
+		sleep 5
+	elif [ "$VER" = "19.04" ]; then
+		supported=1
+	elif [ "$VER" = "19.10" ]; then
+		supported=1
+		#VER=19.04
+		#echo -e "Using Ubuntu 19.04 Installation scripts.\nIf the installation fails contact NadekoBot support."
+		#sleep 5
 	elif [ "$VER" = "20.04" ]; then
 		supported=1
+	elif [ "$VER" = "20.10" ]; then
+		supported=1
+	elif [ "$VER" = "21.04" ]; then
+		supported=1
+		VER=20.10
+		echo -e "Using Ubuntu 20.10 Installation scripts.\nIf the installation fails contact NadekoBot support."
+		sleep 5
 	else
 		supported=0
 	fi
